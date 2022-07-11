@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TMMG</title>
+    <link rel="stylesheet" href="./styles/dekstop.css" media="screen">
+    <link rel="stylesheet" href="./styles/mobile.css" media="screen">
+    <link rel="shortcut icon" href="https://static.tildacdn.com/tild3931-3638-4762-b538-323266313136/fav.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script scr="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"></script>
+</head>
+
+<body>
+    <!-- cursor -->
+    <div class="cursor"></div>
+    <div class="cursor__border"></div>
+    <!-- first screen header -->
+    <div class="circle__solid__white__header__logo">
+        <div class="circle__solid__white__header__logo__symbol"></div>
+    </div>
+    <div class="header">
+        <div class="header__title">
+            <div class="header__title__row__one">THE MOST</div>
+            <div class="header__title__row__two">MEDIA GROUP</div>
+        </div>
+        <div class="gradient header__vector"></div>
+        <div class="header__language border" onclick="languageChange()">RU</div>
+        <div class="header__links">
+            <a class="header__links__about cursor__active" href="#about__us">О КОМПАНИИ</a>
+            <a class="header__links__services cursor__active" href="#services">УСЛУГИ</a>
+            <a class="header__links__contacts cursor__active" href="#contacts">КОНТАКТЫ</a>
+        </div>
+    </div>
+    <!-- first screen footer -->
+    <div class="footer__container">
+        <div class="footer__social__container">
+            <div class="footer__social__item">
+                <svg class="resp__svg" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 10.4999C21 8.42331 20.3842 6.3933 19.2305 4.66661C18.0768 2.93993 16.437 1.59413 14.5184 0.799376C12.5999 0.0046259 10.4887 -0.203375 8.45198 0.201674C6.41521 0.606723 4.54429 1.60663 3.07579 3.07496C1.60729 4.54329 0.607175 6.41409 0.2019 8.4508C-0.203375 10.4875 0.00439516 12.5987 0.798938 14.5173C1.59348 16.4359 2.93911 18.0759 4.66568 19.2298C6.39224 20.3837 8.42219 20.9997 10.4988 20.9999L10.5 21L10.5012 20.9999C13.2848 20.9964 15.9534 19.8891 17.9216 17.9207C19.8898 15.9522 20.9969 13.2835 21 10.4999ZM10.92 20.1502V12.5999H13.86C13.9714 12.5999 14.0782 12.5557 14.157 12.4769C14.2358 12.3982 14.28 12.2913 14.28 12.1799C14.28 12.0686 14.2358 11.9617 14.157 11.883C14.0782 11.8042 13.9714 11.7599 13.86 11.7599H10.92V8.81996C10.9206 8.26319 11.1421 7.72941 11.5358 7.33572C11.9294 6.94203 12.4632 6.72058 13.02 6.71997H14.7C14.8114 6.71997 14.9182 6.67572 14.997 6.59696C15.0758 6.51819 15.12 6.41136 15.12 6.29997C15.12 6.18858 15.0758 6.08175 14.997 6.00299C14.9182 5.92422 14.8114 5.87997 14.7 5.87997H13.02C12.2405 5.88084 11.4932 6.19086 10.9421 6.74203C10.3909 7.29319 10.0809 8.04049 10.08 8.81996V11.7599H7.14C7.02861 11.7599 6.92178 11.8042 6.84302 11.883C6.76425 11.9617 6.72 12.0686 6.72 12.1799C6.72 12.2913 6.76425 12.3982 6.84302 12.4769C6.92178 12.5557 7.02861 12.5999 7.14 12.5999H10.08V20.1501C7.55678 20.0403 5.1769 18.9467 3.45022 17.1035C1.72353 15.2604 0.787371 12.8143 0.842288 10.2893C0.897206 7.76427 1.93883 5.36119 3.74402 3.59484C5.54922 1.82849 7.97439 0.83937 10.5 0.83937C13.0256 0.83937 15.4508 1.82849 17.256 3.59484C19.0612 5.36119 20.1028 7.76427 20.1577 10.2893C20.2126 12.8143 19.2765 15.2604 17.5498 17.1035C15.8231 18.9467 13.4432 20.0403 10.92 20.1501V20.1502Z" fill="var(--main-white-color)"/>
+                </svg>
+            </div>
+            <div class="footer__social__item">
+                <svg class="resp__svg" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.3423 1H6.65768C3.53273 1 1 3.53318 1 6.65768V16.3423C1 19.4673 3.53318 22 6.65813 22H16.3419C19.4668 22 22 19.4668 22 16.3419V6.65768C22 3.53273 19.4668 1 16.3419 1H16.3423Z" stroke="var(--main-white-color)" stroke-miterlimit="10"/>
+                    <path d="M11 16C13.7614 16 16 13.7614 16 11C16 8.23858 13.7614 6 11 6C8.23858 6 6 8.23858 6 11C6 13.7614 8.23858 16 11 16Z" stroke="var(--main-white-color)" stroke-miterlimit="10"/>
+                    <path d="M18.5 5C18.5 5.27614 18.2761 5.5 18 5.5C17.7239 5.5 17.5 5.27614 17.5 5C17.5 4.72386 17.7239 4.5 18 4.5C18.2761 4.5 18.5 4.72386 18.5 5Z" fill="var(--main-white-color)" stroke="var(--main-white-color)"/>
+                </svg>
+            </div>
+        </div>
+        <div class="footer__date">TMMG. 2022</div>
+    </div>
+    <!-- theme button -->
+    <div class="footer__theme__button cursor__active" onclick="themeChange()">White mode</div>
+    <div class="footer__theme__button__mobile cursor__active" onclick="themeChange()">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.0002 13.8C3.24472 13.8 0.200195 10.7554 0.200195 7C0.200195 3.2446 3.2448 0.199997 7.0002 0.199997C10.7556 0.199997 13.8002 3.2446 13.8002 7C13.8002 10.7554 10.7556 13.8 7.0002 13.8ZM7.0002 1.29677C5.18304 1.29677 3.70987 3.85022 3.70987 7C3.70987 10.1498 5.18304 12.7032 7.0002 12.7032C10.1501 12.7032 12.7034 10.1498 12.7034 7C12.7034 3.85022 10.15 1.29677 7.0002 1.29677Z" fill="var(--main-white-color)"/>
+        </svg>
+    </div>
+    <!-- mobile menu circle -->
+    <div class="mobile__menu__icon">
+        <svg width="20" height="6" viewBox="0 0 20 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="2.5" cy="3" r="2.5" fill="var(--main-white-color)"/>
+            <circle cx="10" cy="3" r="2.5" fill="var(--main-white-color)"/>
+            <circle cx="17.5" cy="3" r="2.5" fill="var(--main-white-color)"/>
+        </svg>
+    </div>
+    <div class="mobile__menu__container">
+        <div class="mobile__menu__white__circle"></div>
+        <div class="mobile__menu__white__vector__one"></div>
+        <div class="mobile__menu__white__vector__two"></div>
+        <div class="mobile__menu__social">
+            <div class="mobile__menu__social__item">
+                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28.4375 14.6562C28.4375 11.9306 27.6293 9.2662 26.115 6.99993C24.6008 4.73366 22.4486 2.96729 19.9305 1.92418C17.4124 0.881071 14.6415 0.60807 11.9682 1.1397C9.29496 1.67132 6.83938 2.9837 4.91198 4.91088C2.98457 6.83807 1.67192 9.29349 1.13999 11.9667C0.60807 14.6399 0.880769 17.4108 1.92361 19.929C2.96644 22.4472 4.73258 24.5996 6.9987 26.1141C9.26481 27.6286 11.9291 28.4371 14.6547 28.4374L14.6563 28.4375L14.6578 28.4374C18.3113 28.4328 21.8138 26.9794 24.397 24.3959C26.9803 21.8123 28.4334 18.3097 28.4375 14.6562ZM15.2075 27.3222V17.4124H19.0663C19.2125 17.4124 19.3527 17.3543 19.456 17.251C19.5594 17.1476 19.6175 17.0074 19.6175 16.8612C19.6175 16.715 19.5594 16.5748 19.456 16.4714C19.3527 16.368 19.2125 16.3099 19.0663 16.3099H15.2075V12.4512C15.2083 11.7204 15.499 11.0198 16.0157 10.5031C16.5324 9.98641 17.233 9.69576 17.9638 9.69496H20.1688C20.315 9.69496 20.4552 9.63688 20.5585 9.5335C20.6619 9.43013 20.72 9.28991 20.72 9.14371C20.72 8.99751 20.6619 8.8573 20.5585 8.75392C20.4552 8.65054 20.315 8.59247 20.1688 8.59247H17.9638C16.9407 8.5936 15.9599 9.0005 15.2365 9.72391C14.513 10.4473 14.1061 11.4281 14.105 12.4512V16.3099H10.2463C10.1001 16.3099 9.95984 16.368 9.85646 16.4714C9.75308 16.5748 9.695 16.715 9.695 16.8612C9.695 17.0074 9.75308 17.1476 9.85646 17.251C9.95984 17.3543 10.1001 17.4124 10.2463 17.4124H14.105V27.3221C10.7933 27.1779 7.66968 25.7425 5.40341 23.3234C3.13713 20.9042 1.90842 17.6937 1.9805 14.3797C2.05258 11.0656 3.41972 7.91156 5.78903 5.59323C8.15834 3.2749 11.3414 1.97667 14.6563 1.97667C17.9711 1.97667 21.1542 3.2749 23.5235 5.59323C25.8928 7.91156 27.2599 11.0656 27.332 14.3797C27.4041 17.6937 26.1754 20.9042 23.9091 23.3234C21.6428 25.7425 18.5192 27.1779 15.2075 27.3221V27.3222Z" fill="var(--main-white-color)"/>
+                </svg>
+            </div>
+            <div class="mobile__menu__social__item">
+                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.0118 0.875H8.3007C4.19921 0.875 0.875 4.1998 0.875 8.3007V21.0118C0.875 25.1133 4.1998 28.4375 8.30129 28.4375H21.0112C25.1127 28.4375 28.4375 25.1127 28.4375 21.0112V8.3007C28.4375 4.19921 25.1127 0.875 21.0112 0.875H21.0118Z" stroke="var(--main-white-color)" stroke-miterlimit="10"/>
+                    <path d="M14 20.5625C17.6244 20.5625 20.5625 17.6244 20.5625 14C20.5625 10.3756 17.6244 7.4375 14 7.4375C10.3756 7.4375 7.4375 10.3756 7.4375 14C7.4375 17.6244 10.3756 20.5625 14 20.5625Z" stroke="var(--main-white-color)" stroke-miterlimit="10"/>
+                    <path d="M24 6.125C24 6.57373 23.6362 6.9375 23.1875 6.9375C22.7388 6.9375 22.375 6.57373 22.375 6.125C22.375 5.67627 22.7388 5.3125 23.1875 5.3125C23.6362 5.3125 24 5.67627 24 6.125Z" fill="var(--main-white-color)" stroke="var(--main-white-color)"/>
+                </svg>
+            </div>
+        </div>
+        <div class="mobile__menu__white__theme"></div>
+        <div class="mobile__menu__social"></div>
+        <div class="mobile__menu__social__star__one">
+            <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.96875 4.90909L2.01562 2.91903L0.315341 3.95881L0 3.40483L1.75568 2.45455L0 1.50426L0.315341 0.950284L2.01562 1.99006L1.96875 0H2.60795L2.56108 1.99006L4.26136 0.950284L4.5767 1.50426L2.82102 2.45455L4.5767 3.40483L4.26136 3.95881L2.56108 2.91903L2.60795 4.90909H1.96875Z" fill="var(--main-white-color)"/>
+            </svg>
+        </div>
+        <div class="mobile__menu__social__star__two">
+            <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.96875 4.90909L2.01562 2.91903L0.315341 3.95881L0 3.40483L1.75568 2.45455L0 1.50426L0.315341 0.950284L2.01562 1.99006L1.96875 0H2.60795L2.56108 1.99006L4.26136 0.950284L4.5767 1.50426L2.82102 2.45455L4.5767 3.40483L4.26136 3.95881L2.56108 2.91903L2.60795 4.90909H1.96875Z" fill="var(--main-white-color)"/>
+            </svg>
+        </div>
+        <div class="mobile__menu__social__extremism">* являются экстремистскими в РФ</div>
+        <a class="mobile__menu__item mobile__menu__item__about" href="#about__us">О КОМПАНИИ</a>
+        <a class="mobile__menu__item mobile__menu__item__services" href="#services">УСЛУГИ</a>
+        <a class="mobile__menu__item mobile__menu__item__contacts" href="#contacts">КОНТАКТЫ</a>
+    </div>
+    <!-- parallax sections -->
+    <section class="parallax__section">
+        <div class="parallax__layer__one"></div>
+        <div class="parallax__layer__two">
+            <!-- all circles -->
+            <div class="circle__hollow__large"></div>
+            <div class="circle__hollow__small"></div>
+            <div class="circle__hollow__medium"></div>
+            <div class="circle__hollow__half"></div>
+            <!-- all vectors -->
+            <hr class="vector__diagonal__one"></hr>
+            <hr class="vector__diagonal__two"></hr>
+            <hr class="vector__diagonal__three"></hr>
+        </div>
+        <div class="parallax__layer__three">
+            <!-- all circles -->
+            <div class="circle__solid__gray__large"></div>
+            <div class="circle__solid__gray__small"></div>
+            <div class="circle__solid__red__large">
+                <div class="circle__solid__red__large__text roll"></div>
+            </div>
+            <div class="circle__solid__red__small"></div>
+            <div class="circle__solid__orange__half"></div>
+            <div class="circle__solid__white__footer__logo">
+                <div class="circle__solid__white__footer__logo__symbol"></div>
+            </div>
+            <!-- all vectors -->
+            <div class="gradient vector__horizontally__white__one"></div>
+            <div class="gradient vector__horizontally__white__two"></div>
+            <div class="gradient vector__horizontally__white__three"></div>
+            <div class="vector__horizontally__red__one"></div>
+        </div>
+        <div class="parallax__layer__four">
+            <!-- magnetic circles  -->
+            <div class="magnetic__area__circle magnetic__area__circle__position__two">
+                <div class="circle__solid__white__arrow cursor__blend magnetic__content">
+                    <div class="circle__solid__white__arrow__symbol"></div>
+                </div>
+            </div>
+            <div class="magnetic__area__circle magnetic__area__circle__position__one">
+                <div class="circle__solid__white__question magnetic__content">
+                    <div class="circle__solid__white__question__symbol">?</div>
+                </div>
+            </div>
+            <!-- text rows -->
+            <a class="text__row__about__us element__animation" name="about__us">о нас</a>
+            <div class="text__row__one__zero element__animation">01</div>
+            <div class="text__row__how__we__can__help element__animation">Чем мы можем вам помочь</div>
+            <div class="text__row__block__one element__animation__opacity__two">Любую задачу клиента можно превратить в уникальную историю, которую мы расскажем с помощью актуальных инструментов и современных технологий</div>
+            <div class="text__row__block__two element__animation">Взаимопонимание = успешный проект. Используя human-to-human подход, мы определим,что подойдёт именно вашей задаче и предложим варианты, о которых вы и подумать не могли</div>
+            <div class="text__row__themostout element__animation__opacity__one">THE MOST OUT</div>
+            <div class="text__row__of__result element__animation__opacity__one">- OF RESULT</div>
+            <div class="text__row__themost__mobile element__animation">THE MOST</div>
+            <div class="text__row__of__outof__mobile element__animation">OUT OF</div>
+            <div class="text__row__of__result__mobile element__animation">RESULT</div>
+            <a class="text__row__email element__animation" href="mailto:info@themost.media" name="contacts">info@themost.media</a>
+            <a class="text__row__phone element__animation" href="tel:+74954455555">8 (495) 445-55-55</a>
+            <div class="text__row__date element__animation">2022</div>
+            <div class="text__row__case element__animation">КЕЙСЫ</div>
+            <div class="text__row__zero__two element__animation">02</div>
+            <div class="text__row__have__idea__background element__animation">
+                <div class="have__idea__row__one">MAKE THE</div>
+                <div class="have__idea__row__two"><span>MOST</span> OF IT!</div>
+            </div>
+            <div class="text__row__location element__animation">Пресненская наб., 6 строение 2, Москва, Россия, 123112</div>
+            <!-- services menu -->
+            <div class="services__container">
+                <div class="services__item cursor__active">
+                    <a class="services__item__left" name="services" href="#contacts">Digital Marketing</a>
+                    <div class="services__item__circle__container">
+                        <div class="services__item__circle"></div>
+                    </div>
+                    <div class="services__item__right"></div>
+                </div>
+                <div class="services__item cursor__active">
+                    <a class="services__item__left" href="#contacts">Branding</a>
+                    <div class="services__item__circle__container">
+                        <div class="services__item__circle"></div>
+                    </div>
+                    <a class="services__item__right" href="#contacts"></a>
+                </div>
+                <div class="services__item cursor__active">
+                    <a class="services__item__left" href="#contacts">Web Design</a>
+                    <div class="services__item__circle__container">
+                        <div class="services__item__circle"></div>
+                    </div>
+                    <a class="services__item__right" href="#contacts">Apps</a>
+                </div>
+                <div class="services__item cursor__active">
+                    <a class="services__item__left" href="#contacts">Marketing/PR</a>
+                    <div class="services__item__circle__container">
+                        <div class="services__item__circle"></div>
+                    </div>
+                    <a class="services__item__right" href="#contacts"></a>
+                </div>
+                <div class="services__item cursor__active">
+                    <a class="services__item__left" href="#contacts">Consulting</a>
+                    <div class="services__item__circle__container">
+                        <div class="services__item__circle"></div>
+                    </div>
+                    <a class="services__item__right" href="#contacts"></a>
+                </div>
+                <div class="services__item cursor__active">
+                    <a class="services__item__left" href="#contacts"></a>
+                    <div class="services__item__circle__container">
+                        <div class="services__item__circle"></div>
+                    </div>
+                    <a class="services__item__right" href="#contacts">Creative</a>
+                </div>
+                <div class="services__item cursor__active">
+                    <a class="services__item__left" href="#contacts">Events</a>
+                    <div class="services__item__circle__container">
+                        <div class="services__item__circle"></div>
+                    </div>
+                    <a class="services__item__right" href="#contacts"></a>
+                </div>
+                <div class="services__item cursor__active">
+                    <a class="services__item__left" href="#contacts">Development</a>
+                    <div class="services__item__circle__container">
+                        <div class="services__item__circle"></div>
+                    </div>
+                    <a class="services__item__right" href="#contacts"></a>
+                </div>
+            </div>
+            <!-- clients blog -->
+            <div class="client__container bat__container">
+                <div class="bat__logo__container">
+                    <div class="bat__logo"></div>
+                </div>
+                <div class="bat__services">EVENT / SMM / DIGITAL</div>
+                <div class="bat__name">BAT – Kamchatka press tour</div>
+            </div>
+            <div class="client__container beluga__container">
+                <div class="beluga__logo__container">
+                    <div class="beluga__logo"></div>
+                </div>
+                <div class="beluga__services">PR / SMM / DIGITAL / CREATIVE </div>
+                <div class="beluga__name">Beluga Hunting</div>
+            </div>
+            <div class="client__container mini__container">
+                <div class="mini__logo__container">
+                    <div class="mini__logo"></div>
+                </div>
+                <div class="mini__services">EVENTS / CREATIVE / DIGITAL</div>
+                <div class="mini__name">Mini – Dealer conference 2021</div>
+            </div>
+            <!-- Marquee Line -->
+            <div class="marquee__container">
+                <ul class="marquee__content">
+                    <li><i class="margue__item scream"></i></li>
+                    <li><i class="margue__item beluga"></i></li>
+                    <li><i class="margue__item bmw"></i></li>
+                    <li><i class="margue__item mini"></i></li>
+                    <li><i class="margue__item iqos"></i></li>
+                    <li><i class="margue__item med"></i></li>
+                    <li><i class="margue__item glo"></i></li>
+                    <li><i class="margue__item bat"></i></li>
+                    <li><i class="margue__item arc"></i></li>
+                </ul>
+            </div>
+            <div class="reference__container">
+                <div class="reference__row">
+                    <div class="reference__item">
+                        <div class="bmw"></div>
+                    </div>
+                    <div class="reference__item">
+                        <div class="beluga"></div>
+                    </div>
+                </div>
+                <div class="reference__row">
+                    <div class="reference__item">
+                        <div class="mini"></div>
+                    </div>
+                    <div class="reference__item">
+                        <div class="med"></div>
+                    </div>
+                </div>
+                <div class="reference__row">
+                    <div class="reference__item">
+                        <div class="scream"></div>
+                    </div>
+                    <div class="reference__item">
+                        <div class="iqos"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./script/parallax.js"></script>
+    <script src="./script/header.js"></script>
+    <script src="./script/elementShow.js"></script>
+    <script src="./script/cursor.js"></script>
+    <script src="./script/textTransform.js"></script>
+    <script src="./script/marqueeLine.js"></script>
+    <script src="./script/themeChange.js"></script>
+    <script src="./script/magnetic.js"></script>
+    <script src="./script/mobileMenu.js"></script>
+    <script src="./script/languageChange.js"></script>
+</body>
+
+</html>

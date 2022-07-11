@@ -1,0 +1,889 @@
+            @media screen and (max-width: 480px) {
+                @font-face {
+                    font-family: 'Kudryashev Display';
+                    src: url(../fonts/Kudryashev__Display/KudryashevDisplay.ttf);
+                }
+                @font-face {
+                    font-family: 'Kudryashev Display Sans';
+                    src: url(../fonts/Kudryashev__Display/KudryashevDisplay-Sans.ttf);
+                }
+                @font-face {
+                    font-family: 'Inter';
+                    src: url(../fonts/Inter/static/Inter-Regular.ttf);
+                }
+                body {
+                    /*height: 1280.256410vw;*/
+                    /*min-height: 1280.256410vw;*/
+                    height: 1410vw;
+                    min-height: 1410vw;
+                }
+                .parallax__section {
+                    overflow: hidden;
+                }
+                .parallax__layer__one {
+                    min-height: 1320.256410vw;
+                }
+                .parallax__layer__two {
+                    min-height: 1380.256410vw;
+                }
+                .parallax__layer__three {
+                    min-height: 1380.256410vw;
+                }
+                .parallax__layer__four {
+                    min-height: 1380.256410vw;
+                }
+                /* cursor */
+                .cursor {
+                    display: none;
+                }
+                .cursor__border {
+                    display: none;
+                }
+                /* header */
+                .header {
+                    position: fixed;
+                    height: 12.8205128vw;
+                    transition: none;
+                    animation: none;
+                    animation-timing-function: none;
+                }
+                .header.hide {
+                    transform: none;
+                }
+                .header__vector {
+                    display: none;
+                }
+                .header__title {
+                    display: none;
+                }
+                .header__title__row__one {
+                    display: none;
+                }
+                .header__title__row__two {
+                    display: none;
+                }
+                .header_ctor {
+                    display: none;
+                }
+                .header__language {
+                    height: 7.43589vw;
+                    width: 13.076923vw;
+                    border: 0.0256410vw solid var(--main-white-color);
+                    border-radius: 12.82051vw;
+                    top: 14.871749vw;
+                    left: 60.76923vw;
+                    font-size: 3.076923vw;
+                    line-height: 3.723076vw;
+                }
+                .header__links {
+                    display: none;
+                }
+                /* footer */
+                .footer__container {
+                    display: none;
+                }
+                .footer__theme__button {
+                    display: none;
+                }
+                .footer__theme__button__mobile {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 10000;
+                    position: fixed;
+                    width: 8.71794vw;
+                    height: 8.71794vw;
+                    top: 157.43589vw;
+                    left: 88.71794vw;
+                    border-radius: 50%;
+                    /*border: 0.25641vw solid var(--main-white-color);*/
+                    animation: none;
+                    animation-timing-function: none;
+                }
+                /* solid circles  */
+                .circle__solid__white__header__logo {
+                    z-index: 100;
+                    position: fixed;
+                    height: 12.30769vw;
+                    width: 12.30769vw;
+                    top: 12.8205vw;
+                    left: 2.5641vw;
+                    border-radius: 50%;
+                    animation: none;
+                    animation-timing-function: none;
+                }
+                .circle__solid__gray__large {
+                    width: 100vw;
+                    height: 100vw;
+                    left: 0;
+                    top: 48.717948vw;
+                    border-radius: 50%;
+                }
+                .circle__solid__gray__small {
+                    width: 91.5384vw;
+                    height: 91.5384vw;
+                    left: 69.74358vw;
+                    top: -16.92307vw;
+                }
+                .circle__solid__red__large {
+                    width: 49.743589vw;
+                    height: 49.743589vw;
+                    left: -6.666vw;
+                    top: 141.28205vw;
+                }
+                .circle__solid__red__small {
+                    width: 24.35897vw;
+                    height: 24.35897vw;
+                    left: 46.153846vw;
+                    top: 25.12620vw;
+                }
+                .circle__solid__white__arrow {
+                    width: 17.179vw;
+                    height: 17.179vw;
+                }
+                .circle__solid__white__question {
+                    width: 42.564vw;
+                    height: 42.564vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .circle__solid__orange__half {
+                    width: 46.6666vw;
+                    height: 46.6666vw;
+                    left: 76.66666vw;
+                    top: 1136.4102vw;
+                }
+                .circle__solid__white__footer__logo {
+                    width: 28.71794vw;
+                    height: 28.71794vw;
+                    left: 35.64102vw;
+                    top: 1306.15384vw;
+                }
+                /* solid circles inside */
+                .circle__solid__white__header__logo__symbol {
+                    width: 7.948717vw;
+                    height: 4.651282vw;
+                }
+                .circle__solid__red__large__text {
+                    width: 21.53846vw;
+                    height: 21.53846vw;
+                    left: 14.3589vw;
+                    top: 2.56410vw;
+                }
+                .circle__solid__white__arrow__symbol {
+                    width: 5.0102vw;
+                    height: 6.8vw;
+                }
+                .circle__solid__white__question__symbol {
+                    width: 8.4615vw;
+                    height: 16.923vw;
+                    position: absolute;
+                    width: 8.4615vw;
+                    height: 16.923vw;
+                    top: 15.1vw;
+                    font-family: 'Kudryashev Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 22.948vw;
+                    line-height: 16.923vw;
+                    text-align: right;
+                }
+                .circle__solid__white__footer__logo__symbol {
+                    width: 18.546vw;
+                    height: 10.853vw;
+                }
+                .circle__hollow__large {
+                    width: 94.1025vw;
+                    height: 94.1025vw;
+                    left: 40.256vw;
+                    top: 151.2820vw;
+                }
+                .circle__hollow__small {
+                    width: 46.9230vw;
+                    height: 46.9230vw;
+                    left: 0.2564vw;
+                    top: 205.128vw;
+                }
+                .circle__hollow__medium {
+                    display: none;
+                }
+                .circle__hollow__half {
+                    width: 110.256vw;
+                    height: 110.256vw;
+                    left: 30.2564vw;
+                    top: 1181.794vw;
+                }
+                /* vectors */
+                .vector__horizontally__white__one {
+                    width: 94.87179vw;
+                    left: 2.5641vw;
+                    top: 584.871vw;
+                }
+                .vector__horizontally__white__two {
+                    display: none;
+                }
+                .vector__horizontally__white__three {
+                    display: none;
+                }
+                .vector__horizontally__red__one {
+                    left: 10vw;
+                    width: 80vw;
+                    top: 1265vw;
+                }
+                .vector__diagonal__one {
+                    width: 114.398704vw;
+                    height: 0.0694444vw;
+                    top: 35.5vw;
+                    left: -16.58vw;
+                }
+                .vector__diagonal__two {
+                    width: 127.05555vw;
+                    height: 0.0694444vw;
+                    left: -7.8vw;
+                    top: 161.5555vw;
+                }
+                .vector__diagonal__three {
+                    display: none;
+                }
+                /* text row */
+                .text__row__about__us {
+                    width: 46.923vw;
+                    height: 16.923vw;
+                    left: 2.564vw;
+                    top: 260.256vw;
+                    font-size: 14.10256vw;
+                    line-height: 16.923vw;
+                }
+                .text__row__one__zero {
+                    width: 14.10256vw;
+                    height: 16.923vw;
+                    left: 81.02564vw;
+                    top: 268.205vw;
+                    font-size: 14.10256vw;
+                    line-height: 16.923vw;
+                }
+                .text__row__how__we__can__help {
+                    width: 90.256vw;
+                    height: 42.3076vw;
+                    left: 7.1794vw;
+                    top: 356.410vw;
+                    font-size: 14.102vw;
+                    line-height: 14.102vw;
+                }
+                .text__row__block__one {
+                    width: 62.05128vw;
+                    height: 46.6666vw;
+                    left: 29.2307vw;
+                    top: 198.717vw;
+                    font-size: 4.6153vw;
+                    line-height: 6.6666vw;
+                }
+                .text__row__block__two {
+                    width: 80vw;
+                    height: 40vw;
+                    left: 2.562vw;
+                    top: 292.8205vw;
+                    font-size: 4.6153vw;
+                    line-height: 6.6666vw;
+                }
+                .text__row__themostout {
+                    display: none;
+                }
+                .text__row__of__result {
+                    display: none;
+                }
+                .text__row__themost__mobile {
+                    display: flex;
+                    position: absolute;
+                    width: 93.589vw;
+                    height: 11.794vw;
+                    left: 3.076vw;
+                    top: 71.794vw;
+                    font-family: 'Kudryashev Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 17.179vw;
+                    line-height: 100%;
+                    color: var(--main-white-color);
+                }
+                .text__row__of__outof__mobile {
+                    display: flex;
+                    position: absolute;
+                    width: 73.846vw;
+                    height: 11.794vw;
+                    left: 22.820vw;
+                    top: 87.692vw;
+                    font-family: 'Kudryashev Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 17.179vw;
+                    line-height: 100%;
+                    text-align: right;
+                    color: var(--main-white-color);
+                }
+                .text__row__of__result__mobile {
+                    display: flex;
+                    position: absolute;
+                    width: 96.6666vw;
+                    height: 13.846vw;
+                    left: 2.564vw;
+                    top: 103.589vw;
+                    font-family: 'Kudryashev Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 17.179vw;
+                    line-height: 100%;
+                    color: var(--main-white-color);
+                }
+                .text__row__email {
+                    position: absolute;
+                    width: 78.974vw;
+                    height: 13.589vw;
+                    left: 10.512vw;
+                    top: 1254.358vw;
+                    font-size: 8.9743vw;
+                    line-height: 13.589vw;
+                }
+                .text__row__phone {
+                    width: 68.179vw;
+                    height: 13.589vw;
+                    left: 16.153vw;
+                    top: 1275.897vw;
+                    font-size: 8.974vw;
+                    line-height: 13.589vw;
+                }
+                .text__row__date {
+                    width: 55.641vw;
+                    height: 6.6666vw;
+                    left: 22.3076vw;
+                    top: 1351.538vw;
+                    font-size: 4.6153vw;
+                    line-height: 6.6666vw;
+                }
+                .text__row__case {
+                    width: 56.6666vw;
+                    height: 16.923vw;
+                    left: 2.564vw;
+                    top: 722.307vw;
+                    font-size: 14.1025vw;
+                    line-height: 16.923vw;
+                }
+                .text__row__zero__two {
+                    width: 14.6153vw;
+                    height: 16.923vw;
+                    left: 80.5128vw;
+                    top: 739.230vw;
+                    font-size: 14.1025vw;
+                    line-height: 16.923vw;
+                }
+                .text__row__have__idea__background {
+                    width: 94.8717vw;
+                    height: 42.3076vw;
+                    left: 2.562vw;
+                    top: 1194.102vw;
+                    background-size: contain;
+                }
+                .text__row__location {
+                    width: 70vw;
+                    height: 18.6666vw;
+                    left: 15vw;
+                    top: 1374.538vw;
+                    font-size: 4.6153vw;
+                    line-height: 6.6666vw;
+                }
+                /* services menu */
+                .services__container {
+                    top: 461.794vw;
+                    left: 10vw;
+                    height: 92.3076vw;
+                    width: 80vw;
+                }
+                .services__item {
+                    z-index: 10000;
+                    width: 100%;
+                    height: 11.5383vw;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .services__item__left {
+                    cursor: none;
+                    width: 60%;
+                    height: 100%;
+                    font-family: 'Kudryashev Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 5.6923vw;
+                    line-height: 14.3589vw;
+                    text-align: right;
+                    text-decoration: none;
+                    outline: none !important
+                    color: var(--main-white-color);
+                }
+                .services__item__circle__container {
+                    width: 10%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    display: none;
+                }
+                .services__item__circle {
+                    width: 3.5897vw;
+                    height: 3.5897vw;
+                    border-radius: 50%;
+                    background-color: #FF783F;
+                }
+                .services__item__right {
+                    cursor: none;
+                    width: 30%;
+                    height: 100%;
+                    font-family: 'Kudryashev Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 5.6923vw;
+                    line-height: 14.3589vw;
+                    text-align: left;
+                    text-decoration: none;
+                    color: var(--main-white-color);
+                }
+                /* clients blog  */
+                .bat__container {
+                    left: 2.564vw;
+                    top: 771.538vw;
+                }
+                .bat__logo__container {
+                    width: 96.923vw;
+                    height: 64.358vw;
+                    transform: translateZ(0)
+                }
+                .bat__logo {
+                    width: 96.923vw;
+                    height: 64.358vw;
+                }
+                .bat__services {
+                    width: 21.794vw;
+                    height: 7.6923vw;
+                    top: 69.4871vw;
+                    font-size: 3.07692vw;
+                    line-height: 3.846vw;
+                }
+                .bat__name {
+                    width: 63.3333vw;
+                    height: 27.9487vw;
+                    top: 72.051vw;
+                    left: 31.5384vw;
+                    font-size: 9.7435vw;
+                    line-height: 9.2307vw;
+                }
+                .beluga__container {
+                    left: 2.5641vw;
+                    top: 886.1538vw;
+                }
+                .beluga__logo__container {
+                    width: 94.8717vw;
+                    height: 100.256vw;
+                    transform: translateZ(0)
+                }
+                .beluga__logo {
+                    width: 94.8717vw;
+                    height: 100.256vw;
+                }
+                .beluga__services {
+                    width: 21.7948vw;
+                    height: 11.5384vw;
+                    top: 105.384vw;
+                    font-size: 3.0769vw;
+                    line-height: 3.6461vw;
+                }
+                .beluga__name {
+                    width: 48.205vw;
+                    height: 18.717vw;
+                    top: 107.948vw;
+                    left: 34.1025vw;
+                    font-size: 9.7435vw;
+                    line-height: 9.2307vw;
+                }
+                .mini__container {
+                    left: 2.5641vw;
+                    top: 1028.205vw;
+                }
+                .mini__logo__container {
+                    width: 94.871vw;
+                    height: 63.5897vw;
+                    transform: translateZ(0)
+                }
+                .mini__logo {
+                    width: 94.871vw;
+                    height: 63.5897vw;
+                }
+                .mini__services {
+                    width: 21.5384vw;
+                    height: 11.5384vw;
+                    top: 68.7179vw;
+                    font-size: 3.07692vw;
+                    line-height: 3.84615vw;
+                }
+                .mini__name {
+                    width: 63.3333vw;
+                    height: 27.948vw;
+                    left: 34.1025vw;
+                    top: 71.282vw;
+                    font-size: 9.7435vw;
+                    line-height: 9.230vw;
+                }
+                /* Marquee Line or reference container */
+                .reference__container {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    height: 90.625vw;
+                    width: 75vw;
+                    left: 12.5vw;
+                    top: 607.948vw;
+                }
+                .reference__row {
+                    display: flex;
+                    height: 30.207vw;
+                    width: 100%;
+                }
+                .reference__item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 50%;
+                    height: 100%;
+                }
+                .marquee__container {
+                    display: none;
+                }
+                .scream {
+                    width: 24.8717vw;
+                    height: 4.6153vw;
+                }
+                .beluga {
+                    width: 18.964vw;
+                    height: 18.341vw;
+                }
+                .mini {
+                    width: 26.9230vw;
+                    height: 11.7948vw;
+                }
+                .bmw {
+                    width: 18.671vw;
+                    height: 18.671vw;
+                }
+                .med {
+                    width: 23.4205vw;
+                    height: 23.4205vw;
+                }
+                .iqos {
+                    width: 26.9230vw;
+                    height: 11.7948vw;
+                    background-position: center;
+                }
+                /* magnetic buttons */
+                .magnetic__area__circle {
+                    width: 17.179vw;
+                    height: 17.179vw;
+                }
+                .magnetic__area__circle__position__one {
+                    left: 67.6923vw;
+                    top: 410.2564vw;
+                }
+                .magnetic__area__circle__position__two {
+                    left: 41.5384vw;
+                    top: 148.4615vw;
+                }
+                /* mobile menu  */
+                .mobile__menu__icon {
+                    padding: 2vw;
+                    z-index: 1000000;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: fixed;
+                    width: 10.769vw;
+                    height: 10.769vw;
+                    left: 86.666vw;
+                    top: 13.589vw;
+                    border-radius: 50%;
+                    border: 0.256vw solid var(--main-white-color);
+                    /* border: 0.256vw solid white; */
+                    box-sizing: border-box;
+                }
+                .mobile__menu__item {
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 60%;
+                    height: 10%;
+                    color: var(--main-white-color);
+                    /* color: white; */
+                }
+                .mobile__menu__container {
+                    z-index: 999999;
+                    position: fixed;
+                    display: flex;
+                    width: 100vw;
+                    height: 100vh;
+                    opacity: 0;
+                    transform: translateY(-100%);
+                    background-color: var(--main-black-color);
+                    /* background-color: black; */
+                    background-image: url(../img/mobile/mobile__menu__background.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                .mobile__menu__white__circle {
+                    position: absolute;
+                    width: 139.79vw;
+                    height: 139.79vw;
+                    left: -26.153vw;
+                    top: 20.256vw;
+                    border-radius: 50%;
+                    /* border: 0.2564vw solid white; */
+                    border: 0.2564vw solid var(--main-white-color);
+                }
+                .mobile__menu__white__vector__one {
+                    position: absolute;
+                    width: 60.398703754946425vw;
+                    height: 0.0694444vw;
+                    background-color: var(--main-white-color);
+                    border: 0.5564vw solid white;
+                    transform: rotate(-45deg);
+                    border: none;
+                    /*top: 20.5vw;*/
+                    /*left: -15.58vw;*/
+                    top: 15.4vw;
+                    left: -10vw;
+                }
+                .mobile__menu__white__vector__two {
+                    position: absolute;
+                    width: 175.398703754946425vw;
+                    height: 0.0694444vw;
+                    background-color: var(--main-white-color);
+                    border: 0.2564vw solid white;
+                    transform: rotate(-45deg);
+                    border: none;
+                    top: 152vw;
+                    left: -6.58vw;
+                }
+                .mobile__menu__social {
+                    position: absolute;
+                    width: 22.8205vw;
+                    height: 10.7692vw;
+                    left: 38.7179vw;
+                    top: 164.3589vw;
+                }
+                .mobile__menu__item__services {
+                    position: absolute;
+                    left: 7.46%;
+                    top: 38.29%;
+                    font-family: 'Kudryashev Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 7.6923vw;
+                    line-height: 10.2564vw;
+                    color: var(--main-white-color);
+                    /* color: white; */
+                }
+                .mobile__menu__item__contacts {
+                    position: absolute;
+                    left: 22.46%;
+                    top: 42.29%;
+                    font-family: 'Kudryashev Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 7.6923vw;
+                    line-height: 10.2564vw;
+                    color: var(--main-white-color);
+                    /* color: white; */
+                }
+                .mobile__menu__item__about {
+                    color: #FFFFFF;
+                    position: absolute;
+                    left: 20%;
+                    top: 33.86%;
+                    font-family: 'Kudryashev Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 7.6923vw;
+                    line-height: 10.2564vw;
+                    color: var(--main-white-color);
+                    /* color: white; */
+                }
+                .mobile__menu__show {
+                    animation: mobile__menu__show 0.5s forwards;
+                    animation-timing-function: linear;
+                }
+                .mobile__menu__is__open {
+                    border: none;
+                }
+                .mobile__menu__social {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+                .mobile__menu__social__item {
+                    width: 27.56px;
+                    height: 27.56px;
+                }
+                .mobile__menu__social__extremism {
+                    position: absolute;
+                    width: 100vw;
+                    height: 40px;
+                    text-aling: center;
+                    left: 94px;
+                    top: 176.666vw;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 3.0769vw;
+                    line-height: 10.2564vw;
+                    color: var(--main-white-color);
+                    opacity: 0.8;
+                }
+                .mobile__menu__social__star__one {
+                    position: absolute;
+                    width: 1.1743vw;
+                    height: 1.2589vw;
+                    top: 162vw;
+                    left: 48.2051vw;
+                }
+                .mobile__menu__social__star__two {
+                    position: absolute;
+                    width: 1.1743vw;
+                    height: 1.2589vw;
+                    top: 162vw;
+                    left: 60vw;
+                }
+                /* animations */
+                /* spin */
+                @keyframes mobile__menu__show {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(100%);
+                    }
+                    100% {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+                .roll {
+                    animation: roll 5s infinite;
+                    animation-timing-function: linear;
+                }
+                @keyframes roll {
+                    0% {
+                        transform: rotate(0deg);
+                    }
+                    100% {
+                        transform: rotate(360deg);
+                    }
+                }
+                /* element show */
+                .element__animation {
+                    opacity: 0;
+                    transform: translateY(13.88vw);
+                }
+                .element__animation.element__show {
+                    opacity: 1;
+                    transition: all 0.5s;
+                    transform: translateY(0%);
+                }
+                /* first window */
+                @keyframes circle__solid__gray__large {
+                    0% {
+                        transform: scale(0) rotate(0deg);
+                    }
+                    20% {
+                        transform: scale(0.1) rotate(72deg);
+                    }
+                    100% {
+                        transform: scale(1) rotate(360deg);
+                    }
+                }
+                @keyframes circle__solid__gray__small {
+                    0% {
+                        transform: scale(0);
+                    }
+                    50% {
+                        transform: scale(1.3);
+                    }
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+                @keyframes circle__solid__red__small {
+                    0% {
+                        transform: scale(0.2);
+                    }
+                    20% {
+                        transform: scale(0.5);
+                    }
+                    40% {
+                        transform: scale(0.2);
+                    }
+                    60% {
+                        transform: scale(0.5);
+                    }
+                    80% {
+                        transform: scale(0.2);
+                    }
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+                @keyframes circle__solid__red__large {
+                    0% {
+                        transform: scale(0);
+                    }
+                    30% {
+                        transform: scale(0);
+                    }
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+                @keyframes circle__solid__white__arrow {
+                    0% {
+                        transform: scale(0);
+                    }
+                    60% {
+                        transform: scale(0);
+                    }
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+                @keyframes opacityAnimation {
+                    0% {
+                        opacity: 0;
+                    }
+                    66% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }
+                @keyframes vector__diagonal__one {
+                    0% {
+                        transform: translate(-100%, -100%) rotate(-45deg);
+                    }
+                    100% {
+                        transform: translate(0, 0) rotate(-45deg);
+                    }
+                }
+                @keyframes vector__diagonal__two {
+                    0% {
+                        transform: translate(100%, 100%) rotate(-45deg);
+                    }
+                    100% {
+                        transform: translate(0, 0) rotate(-45deg);
+                    }
+                }
+            }
