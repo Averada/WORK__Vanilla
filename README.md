@@ -1,1 +1,1 @@
-# WORK__Vanilla
+Демонстрация кода. Проект расположен по адресу: https://info.themost.media/
